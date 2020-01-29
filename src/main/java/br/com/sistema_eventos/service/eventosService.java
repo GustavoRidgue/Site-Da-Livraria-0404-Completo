@@ -9,13 +9,19 @@ import java.time.LocalDate;
 
 @Service
 public class eventosService {
+
     @Autowired
     private eventosRepository repository;
 
     public eventosModel cadastrarEvento(eventosModel evento) {
         evento.setAtivo(Boolean.TRUE);
         evento.setDataCriacao(LocalDate.now());
-    return repository.save(evento);
+        return repository.save(evento);
+    }
+
+    public Iterable<eventosModel> listarEventos() {
+       Iterable<eventosModel> eventos = repository.findAll();
+       return eventos;
     }
 }
 
