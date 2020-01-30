@@ -8,7 +8,7 @@
         <version>2.2.4.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>br.com.groger</groupId>
+    <groupId>br.com.gustavo</groupId>
     <artifactId>sistemas_eventos</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>sistemas_eventos</name>
